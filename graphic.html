@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fine Arts</title>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;1,600&family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link href="mediaquery.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <div class="search-container">
+        <form action="/action_page.php">
+          <input type="text" placeholder="Search.." name="search" />
+          <button type="submit">
+            <i class="fa fa-search">
+              <ion-icon
+                name="search-outline"
+                role="img"
+                class="md hydrated"
+                aria-label="search outline"
+              >
+                <div class="icon-inner">
+                  <svg
+                    xmlns="https://alexu.edu.eg/index.php/en/"
+                    class="ion-icon s-ion-icon"
+                    viewBox="0 0 512 512"
+                  >
+                    <title>Search</title>
+                    <path
+                      d="M221.09 64a157.09 157.09 0 10157.09 157.09A157.1 157.1 0 00221.09 64z"
+                      stroke-miterlimit="10"
+                      class="ionicon-fill-none ionicon-stroke-width"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-miterlimit="10"
+                      d="M338.29 338.29L448 448"
+                      class="ionicon-fill-none ionicon-stroke-width"
+                    ></path>
+                  </svg>
+                </div>
+              </ion-icon>
+            </i>
+          </button>
+        </form>
+      </div>
+    </div>
+    <header class="header">
+      <nav class="nav-logo">
+        <a href="https://alexu.edu.eg/index.php/en/"
+          ><img
+            src="img/lo.png"
+            alt="HTML tutorial"
+            style="width: 136px; height: 57px"
+          />
+        </a>
+        <div class="vl"></div>
+        <p class="fine-text">Fine Arts</p>
+      </nav>
+      <nav class="nav">
+        <a class="nav-link" href="#students">Students</a>
+        <a class="nav-link" href="#research">Research</a>
+        <a class="nav-link" href="#alumni">Alumni</a>
+        <div class="gar-subnav">
+          <button class="gar-subnavbtn">
+            Graphic
+            <i class="fa fa-catet-down"></i>
+          </button>
+          <div class="gar-subnav-content">
+            <a href="communication.html">Communication</a>
+            <a href="illustration.html">Illustration</a>
+            <a href="printmaking.html">Printmaking</a>
+          </div>
+        </div>
+        <!-- <a class="nav-link" href="#departments">Departments</a>  -->
+        <a class="nav-link" href="#our people">Our people</a>
+        <a class="nav-link" href="#gallery">Gallery</a>
+        <a class="nav-link" href="#news & events">News & events</a>
+      </nav>
+    </header>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 5</div>
+        <img src="img/01.jpeg" style="width: 100%" />
+        <div class="gar-text">WELCOME IN GRAPHIC DEPARTMENT</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 5</div>
+        <img src="img/02.jpeg" style="width: 100%" />
+        <div class="gar-text">WELCOME IN GRAPHIC DEPARTMENT</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 5</div>
+        <img src="img/03.jpeg" style="width: 100%" />
+        <div class="gar-text">WELCOME IN GRAPHIC DEPARTMENT</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">4 / 5</div>
+        <img src="img/04.jpeg" style="width: 100%" />
+        <div class="gar-text">WELCOME IN GRAPHIC DEPARTMENT</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">5 / 5</div>
+        <img src="img/05.jpeg" style="width: 100%" />
+        <div class="gar-text">WELCOME IN GRAPHIC DEPARTMENT</div>
+      </div>
+
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    </div>
+    <br />
+    <div style="text-align: center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+      <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
